@@ -1,4 +1,4 @@
-FROM proxy-docker.sourdin.ovh/python:3.10.5-alpine3
+FROM proxy-docker.sourdin.ovh/python:3.10.5-alpine3.15
 RUN /usr/sbin/adduser -g python -D python && apk update && apk upgrade
 USER python
 RUN /usr/local/bin/python -m venv /home/python/venv
