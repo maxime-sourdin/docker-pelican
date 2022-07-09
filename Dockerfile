@@ -7,4 +7,4 @@ ENV PATH="/home/python/venv/bin:${PATH}" \
 COPY --chown=python:python requirements.txt /home/python/docker-pelican/requirements.txt
 RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-pelican/requirements.txt
 WORKDIR /pelican-site
-ENTRYPOINT ["/home/python/venv/bin/pelican"]
+#ENTRYPOINT ["/home/python/venv/bin/pelican"]
