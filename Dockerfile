@@ -5,6 +5,6 @@ RUN /usr/local/bin/python -m venv /home/python/venv
 ENV PATH="/home/python/venv/bin:${PATH}" \
     PYTHONUNBUFFERED="1"
 COPY --chown=python:python requirements.txt /home/python/docker-pelican/requirements.txt
-RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-pelican/requirements.txt
+RUN /home/python/venv/bin/pip install --no-cache-dir --requirement /home/python/docker-pelican/requirements.txt gcc musl-dev python3-dev pango zlib-dev jpeg-dev openjpeg-dev g++ libffi-dev
 WORKDIR /pelican-site
 #ENTRYPOINT ["/home/python/venv/bin/pelican"]
