@@ -16,4 +16,3 @@ rich
 six
 unidecode
 pelican-sitemap
-weasyprint
